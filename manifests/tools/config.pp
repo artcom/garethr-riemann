@@ -4,6 +4,7 @@ class riemann::tools::config {
   $net_user = $riemann::tools::net_user
   $health_user = $riemann::tools::health_user
   $rvm_ruby_string = $riemann::tools::rvm_ruby_string
+  $host = $riemann::tools::host
 
   case $::osfamily {
     'Debian': {

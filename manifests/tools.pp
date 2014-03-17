@@ -30,6 +30,7 @@ class riemann::tools(
   $net_enabled = true,
   $net_user = $riemann::params::net_user,
   $rvm_ruby_string = $riemann::params::rvm_ruby_string,
+  $host = $riemann::params::host,
 ) inherits riemann::params {
   validate_bool($health_enabled, $net_enabled)
   class { 'riemann::tools::install': } ->
